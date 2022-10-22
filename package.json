@@ -1,0 +1,23 @@
+{
+  "name": "designcomp_04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takaki-web/Designcomp_04.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takaki-web/Designcomp_04/issues"
+  },
+  "homepage": "https://github.com/takaki-web/Designcomp_04#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
