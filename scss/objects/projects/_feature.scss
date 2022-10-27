@@ -1,0 +1,53 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+// featureセクション
+.p-index-feature{
+	.p-index-feature__wrapper{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		}
+	.p-index-feature__svg01{
+		position: absolute;
+		z-index: 1;
+	}
+	.p-index-feature__svg02{
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+	}
+	.p-index-feature__text{
+		position: absolute;
+		top: 131px;
+		font-size: 1.4rem;
+		color: import.$color-white;
+		line-height: 2.8;
+		width: 336px;
+			}
+
+}
+
+
+@include m.mq(pc) {
+	.p-index-feature{
+			.p-index-feature__img-wrapper{
+				padding: 130px 0;
+			}
+		.p-index-feature__svg03{
+			position: absolute;
+			z-index: 1;
+		}
+		.p-index-feature__svg04{
+			position: absolute;
+			z-index: 1;
+			bottom: 0;
+		}
+		.p-index-feature__text{
+			top: 582.49px;
+			width: 557px;
+			transform: translateX(-317px);
+				}
+	}
+}
