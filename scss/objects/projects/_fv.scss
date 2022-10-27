@@ -3,6 +3,136 @@
 // Base (Mobile First)
 
 // fvセクション
+.p-index-fv {
+  .p-index-fv__bg-wrapper {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 921px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      margin: 0 auto;
+      height: 100%;
+    }
+  }
+  .p-index-fv__slider-img-wrapper {
+    img {
+      height: 100%;
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .p-index-fv__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+		position: relative;
+    &::before {
+      content: url(/img/sp/icon-honey1-sp.png);
+			position: absolute;
+			top: 0;
+			transform: translateX(-50px);
+    }
+		&::after{
+      content: url(/img/sp/icon-honey2-sp.png);
+			position: absolute;
+			top: 22.31px;
+			transform: translateX(80px);
+		}
+    // Retinaディスプレイ用
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .p-index-fv__title-wrapper::before {
+        background-image: url(/img/sp/icon-honey1-sp@2x.png);
+        position: absolute;
+        top: 0;
+        transform: translateX(-50px);
+      }
+    }
+        // Retinaディスプレイ用
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .p-index-fv__title-wrapper::after {
+            background-image: url(/img/sp/icon-honey2-sp@2x.png);
+            position: absolute;
+            top: 22.31px;
+            transform: translateX(80px);
+          }
+        }
 
+  }
+  .p-index-fv__title {
+    margin-top: 125px;
+  }
+  .p-index-fv__text1 {
+    margin-top: 30px;
+  }
+  .p-index-fv__text2 {
+    margin-top: 15px;
+  }
+  .p-index-fv__img-wrapper {
+    display: block;
+    margin-top: 20px;
+    img {
+      object-fit: cover;
+      height: 280px;
+      width: 100%;
+    }
+  }
+}
 @include m.mq(pc) {
+  .p-index-fv {
+    .p-index-fv__bg-wrapper {
+      height: 1560px;
+    }
+    .p-index-fv__slider-img-wrapper{
+      img{
+        max-height: 650px;
+      }
+    }
+    .p-index-fv__title-wrapper {
+      &::before {
+        content: url(/img/pc/icon-honey1-pc.png);
+        transform: translateX(-280px);
+      }
+      &::after{
+        content: url(/img/pc/icon-honey2-pc.png);
+        top: 130px;
+        transform: translateX(380px);
+      }
+      // Retinaディスプレイ用
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .p-index-fv__title-wrapper::before {
+          background-image: url(/img/pc/icon-honey1-pc@2x.png);
+          transform: translateX(-280px);
+        }
+      }
+          // Retinaディスプレイ用
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .p-index-fv__title-wrapper::after {
+              background-image: url(/img/pc/icon-honey2-pc@2x.png);
+              top: 130px;
+              transform: translateX(380px);
+            }
+          }
+    }
+    .p-index-fv__title {
+      margin-top: 200px;
+    }
+    .p-index-fv__text1 {
+      margin-top: 50px;
+    }
+    .p-index-fv__img-wrapper {
+      margin-top: 60px;
+      img {
+        object-fit: cover;
+        height: 280px;
+        width: 100%;
+      }
+    }
+  }
+
 }
