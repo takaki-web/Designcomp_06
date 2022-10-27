@@ -7,5 +7,8 @@
       "last 1 versions"
     ],
     "dartsass.outputFormat": "cssonly", //cssの出力するフォーマット cssonly、minified、bothの３つから選べる
-    "dartsass.sassBinPath": "./node_modules/sass/sass.js"
+    "dartsass.sassBinPath": "./node_modules/sass/sass.js",
+    "cSpell.words": [
+      "unslick"
+    ]
   }

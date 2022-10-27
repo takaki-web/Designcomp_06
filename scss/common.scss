@@ -4,10 +4,15 @@
 // mixin
 @use "./mixin";
 // レイアウト
-@use "./layouts/header";
 @use "./layouts/footer";
 // コンポーネント(再利用可能なCSS)
 // プロジェクト(ページごとの固有CSS)
 @use "./objects/projects/fv";
+@use "./objects/projects/product";
+@use "./objects/projects/various";
+@use "./objects/projects/feature";
+@use "./objects/projects/process";
+@use "./objects/projects/contact";
+
 // Utilities
 // @use "./objects/utilities";
