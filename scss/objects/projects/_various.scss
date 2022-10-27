@@ -1,0 +1,105 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+// variousセクション
+.p-index-various {
+  margin-top: 80px;
+  background-color: import.$color-lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 55px;
+  &::before {
+    content: url(/img/sp/icon-rainbow-sp.png);
+  }
+  .p-index-various__title {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    span {
+      display: block;
+      font-size: 1.1rem;
+    }
+    &::before {
+      content: url(/img/sp/title-honey2-sp.png);
+      position: absolute;
+      top: 0;
+      transform: translate(30px, -100px);
+    }
+  }
+  .p-index-various__lists {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .p-index-various__list {
+    margin: 0 32px;
+  }
+  .p-index-various__list-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    width: 247px;
+    margin-top: 15px;
+  }
+  .p-index-various__list-text {
+    font-size: 1.3rem;
+    width: 247px;
+    margin-top: 15px;
+		line-height: 1.62;
+  }
+}
+@include m.mq(pc) {
+  .p-index-various {
+    margin-top: 80px;
+    background-color: import.$color-lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 55px;
+    position: relative;
+    &::before {
+      content: url(/img/pc/icon-rainbow-pc.png);
+      position: absolute;
+      top: 0px;
+    }
+    .p-index-various__title {
+      font-size: 2.4rem;
+      &::before {
+        content: url(/img/pc/icon-honey2-pc.png);
+        position: inherit;
+        display: block;
+        margin-top: 346px;
+        padding-bottom: 26.03px;
+        transform: translate(0);
+      }
+    }
+		.p-index-various__grid-wrapper{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+    .p-index-various__lists {
+      display: grid;
+      grid-template-columns: 377px 250px 250px 377px;
+      grid-template-rows: 595px;
+      grid-column-gap: 54px;
+      grid-row-gap: 0px;
+    }
+    .p-index-various__list {
+      margin: 0;
+    }
+    .p-index-various__list:nth-of-type(1) {
+      padding-top: 213px;
+			padding-left: 127px;
+    }
+		.p-index-various__list:nth-of-type(2) {
+      padding-top: 137px;
+    }
+    .p-index-various__list:nth-of-type(3) {
+      padding-top: 69px;
+    }
+
+  }
+}
