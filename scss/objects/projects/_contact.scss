@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-	padding-bottom: 56px;
+  padding-bottom: 56px;
   .p-index-contact__title {
     font-size: 2rem;
     text-align: center;
@@ -34,27 +34,26 @@
     grid-template-rows: repeat(4, 14px);
     grid-column-gap: 10px;
     grid-row-gap: 12px;
-		transform: translateX(-60px);
+    transform: translateX(-60px);
   }
 }
 
 @include m.mq(pc) {
-	.p-index-contact {
-		padding-bottom: 180px;
-		margin-top: 120px;
-		.p-index-contact__title {
-			font-size: 2.4rem;
-			&::before {
-				content: url(/img/pc/icon-honey2-pc.webp);
-				padding-bottom: 30px;
-			}
-		}
-		.p-index-contact__text {
-			width: 376px;
-		}
-		.p-index-contact__lists {
-			transform: translateX(-80px);
-		}
-	}
-
+  .p-index-contact {
+    padding-bottom: 180px;
+    margin-top: 120px;
+    .p-index-contact__title {
+      font-size: 2.4rem;
+      &::before {
+        content: url(/img/pc/icon-honey2-pc.webp);
+        padding-bottom: 30px;
+      }
+    }
+    .p-index-contact__text {
+      width: 376px;
+    }
+    .p-index-contact__lists {
+      transform: translateX(-80px);
+    }
+  }
 }
