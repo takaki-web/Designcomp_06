@@ -11,13 +11,13 @@
   position: relative;
   padding-bottom: 101px;
   &::before {
-    content: url(/img/sp/icon-leaf1-sp.png);
+    content: url(/img/sp/icon-leaf1-sp.webp);
     position: absolute;
     top: 128px;
     transform: translateX(-100px);
   }
   &::after {
-    content: url(/img/sp/icon-leaf2-sp.png);
+    content: url(/img/sp/icon-leaf2-sp.webp);
     position: absolute;
     bottom: 0;
     transform: translateX(100px);
@@ -30,7 +30,7 @@
       font-size: 1.1rem;
     }
     &::before {
-      content: url(/img/sp/title-honey1-sp.png);
+      content: url(/img/sp/title-honey1-sp.webp);
       display: block;
       margin-top: 48px;
       padding-bottom: 61px;
@@ -76,18 +76,18 @@
   .p-index-product {
     padding-bottom: 139px;
     &::before {
-      content: url(/img/pc/icon-leaf1-pc.png);
+      content: url(/img/pc/icon-leaf1-pc.webp);
       top: 252px;
       transform: translateX(-362px);
     }
     &::after {
-      content: url(/img/pc/icon-leaf2-pc.png);
+      content: url(/img/pc/icon-leaf2-pc.webp);
       transform: translateX(362px);
     }
     .p-index-product__title {
       font-size: 2.4rem;
       &::before {
-        content: url(/img/pc/icon-honey1-pc.png);
+        content: url(/img/pc/icon-honey1-pc.webp);
         margin-top: 120px;
         padding-bottom: 32px;
       }
