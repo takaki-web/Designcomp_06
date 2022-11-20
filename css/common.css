@@ -133,6 +133,17 @@ table {
   object-fit: cover;
   width: 100%;
 }
+.p-index-fv .p-index-fv__title svg {
+  animation: ani01 5s;
+}
+@keyframes ani01 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .p-index-fv .p-index-fv__title-wrapper {
   display: flex;
   flex-direction: column;
