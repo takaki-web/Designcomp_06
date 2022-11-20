@@ -155,20 +155,56 @@ table {
   content: url(/img/sp/icon-honey1-sp.webp);
   position: absolute;
   top: 0;
-  transform: translateX(-50px);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  animation-name: anim_h01;
+}
+@keyframes anim_h01 {
+  0% {
+    transform: translateX(-290px);
+  }
+  100% {
+    transform: translateX(-260px);
+  }
 }
 .p-index-fv .p-index-fv__title-wrapper::after {
   content: url(/img/sp/icon-honey2-sp.webp);
   position: absolute;
   top: 22.31px;
-  transform: translateX(80px);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  animation-name: anim_h02;
+}
+@keyframes anim_h02 {
+  0% {
+    transform: translateX(390px);
+  }
+  100% {
+    transform: translateX(360px);
+  }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .p-index-fv .p-index-fv__title-wrapper .p-index-fv__title-wrapper::before {
     background-image: url(/img/sp/icon-honey1-sp@2x.webp);
     position: absolute;
     top: 0;
-    transform: translateX(-50px);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-name: anim_h01;
+  }
+  @keyframes anim_h01 {
+    0% {
+      transform: translateX(-290px);
+    }
+    100% {
+      transform: translateX(-260px);
+    }
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -176,7 +212,19 @@ table {
     background-image: url(/img/sp/icon-honey2-sp@2x.webp);
     position: absolute;
     top: 22.31px;
-    transform: translateX(80px);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-name: anim_h02;
+  }
+  @keyframes anim_h02 {
+    0% {
+      transform: translateX(390px);
+    }
+    100% {
+      transform: translateX(360px);
+    }
   }
 }
 .p-index-fv .p-index-fv__title {
@@ -281,6 +329,19 @@ table {
   display: block;
   margin-top: 48px;
   padding-bottom: 61px;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  animation-name: anim_h03;
+}
+@keyframes anim_h03 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
 }
 .p-index-product .p-index-product__text {
   margin-top: 40px;
@@ -404,7 +465,19 @@ table {
   content: url(/img/sp/title-honey2-sp.webp);
   position: absolute;
   top: 0;
-  transform: translate(30px, -100px);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  animation-name: anim_h04;
+}
+@keyframes anim_h04 {
+  0% {
+    transform: translate(0px, -100px);
+  }
+  100% {
+    transform: translate(30px, -100px);
+  }
 }
 .p-index-various .p-index-various__lists {
   width: 375px;
@@ -453,6 +526,19 @@ table {
     margin-top: 346px;
     padding-bottom: 26.03px;
     transform: translate(0);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-name: anim_h03;
+  }
+  @keyframes anim_h03 {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(30px);
+    }
   }
   .p-index-various .p-index-various__grid-wrapper {
     display: flex;
@@ -551,6 +637,19 @@ table {
   content: url(/img/sp/title-honey1-sp.webp);
   display: block;
   padding-bottom: 20px;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  animation-name: anim_h03;
+}
+@keyframes anim_h03 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
 }
 .p-index-process .p-index-process__lists {
   margin-top: 70px;
@@ -669,6 +768,19 @@ table {
   content: url(/img/sp/title-honey2-sp.webp);
   display: block;
   padding-bottom: 20px;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  animation-name: anim_h03;
+}
+@keyframes anim_h03 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
 }
 .p-index-contact .p-index-contact__text {
   margin-top: 50px;
