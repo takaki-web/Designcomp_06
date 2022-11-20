@@ -2,7 +2,7 @@ $(function () {
   $("#js-p-index-fv__slider").slick({
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
     fade: true,
     slidesToShow: 1,
     speed: 4000,
@@ -20,7 +20,7 @@ function checkBreakPoint() {
       $(function () {
         $("#js-p-index-various__slider").slick({
           arrows: false,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 2000,
           slidesToShow: 1,
           speed: 4000,
