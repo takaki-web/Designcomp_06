@@ -163,10 +163,10 @@ table {
 }
 @keyframes anim_h01 {
   0% {
-    transform: translateX(-290px);
+    transform: translateX(-90px);
   }
   100% {
-    transform: translateX(-260px);
+    transform: translateX(-60px);
   }
 }
 .p-index-fv .p-index-fv__title-wrapper::after {
@@ -181,10 +181,10 @@ table {
 }
 @keyframes anim_h02 {
   0% {
-    transform: translateX(390px);
+    transform: translateX(90px);
   }
   100% {
-    transform: translateX(360px);
+    transform: translateX(60px);
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -200,10 +200,10 @@ table {
   }
   @keyframes anim_h01 {
     0% {
-      transform: translateX(-290px);
+      transform: translateX(-90px);
     }
     100% {
-      transform: translateX(-260px);
+      transform: translateX(-60px);
     }
   }
 }
@@ -220,10 +220,10 @@ table {
   }
   @keyframes anim_h02 {
     0% {
-      transform: translateX(390px);
+      transform: translateX(90px);
     }
     100% {
-      transform: translateX(360px);
+      transform: translateX(60px);
     }
   }
 }
@@ -255,25 +255,53 @@ table {
   }
   .p-index-fv .p-index-fv__title-wrapper::before {
     content: url(/img/pc/icon-honey1-pc.webp);
-    transform: translateX(-280px);
+  }
+  @keyframes anim_h01 {
+    0% {
+      transform: translateX(-290px);
+    }
+    100% {
+      transform: translateX(-260px);
+    }
   }
   .p-index-fv .p-index-fv__title-wrapper::after {
     content: url(/img/pc/icon-honey2-pc.webp);
     top: 130px;
-    transform: translateX(380px);
+  }
+  @keyframes anim_h02 {
+    0% {
+      transform: translateX(390px);
+    }
+    100% {
+      transform: translateX(360px);
+    }
   }
 }
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi) {
   .p-index-fv .p-index-fv__title-wrapper .p-index-fv__title-wrapper::before {
     background-image: url(/img/pc/icon-honey1-pc@2x.webp);
-    transform: translateX(-280px);
+  }
+  @keyframes anim_h01 {
+    0% {
+      transform: translateX(-290px);
+    }
+    100% {
+      transform: translateX(-260px);
+    }
   }
 }
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi) {
   .p-index-fv .p-index-fv__title-wrapper .p-index-fv__title-wrapper::after {
     background-image: url(/img/pc/icon-honey2-pc@2x.webp);
     top: 130px;
-    transform: translateX(380px);
+  }
+  @keyframes anim_h02 {
+    0% {
+      transform: translateX(390px);
+    }
+    100% {
+      transform: translateX(360px);
+    }
   }
 }
 @media screen and (min-width: 1200px) {
