@@ -2,23 +2,23 @@
 @use "../mixin" as m;
 
 // footerセクション
-.l-index-footer {
+.l-footer {
   background-color: import.$color-lightblue;
   height: 335px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .l-index-footer__img-wrapper {
+  .l-footer__img-wrapper {
     transform: translateY(-23px);
   }
-  .l-index-footer__grid-wrapper {
+  .l-footer__grid-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 75px 77px;
     grid-column-gap: 0px;
     grid-row-gap: 20px;
   }
-  .l-index-footer__button {
+  .l-footer__button {
     width: 256px;
     height: 40px;
     display: block;
@@ -33,39 +33,39 @@
     margin: 0 auto;
     margin-top: 35px;
   }
-  .l-index-footer__list {
+  .l-footer__list {
     font-size: 1.4rem;
   }
-  .l-index-footer__list:nth-of-type(1) {
+  .l-footer__list:nth-of-type(1) {
     font-weight: bold;
     font-size: 1.6rem;
   }
-  .l-index-footer__list:nth-of-type(2) {
+  .l-footer__list:nth-of-type(2) {
     margin-top: 10px;
   }
-  .l-index-footer__list:nth-of-type(3) {
+  .l-footer__list:nth-of-type(3) {
     margin-top: 15px;
   }
-  .l-index-footer__copyright {
+  .l-footer__copyright {
     font-size: 1rem;
     margin: 0 auto;
     margin-top: 65px;
   }
 }
 @include m.mq(pc) {
-  .l-index-footer {
+  .l-footer {
     height: 355px;
-    .l-index-footer__img-wrapper {
+    .l-footer__img-wrapper {
       transform: translateY(-58.5px);
     }
-    .l-index-footer__grid-wrapper {
+    .l-footer__grid-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 77px;
       grid-column-gap: 65px;
       grid-row-gap: 0;
     }
-    .l-index-footer__button {
+    .l-footer__button {
       margin-top: 21px;
     }
   }
