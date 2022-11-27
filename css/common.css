@@ -76,6 +76,10 @@ table {
   margin: 0 auto;
   margin-top: 35px;
 }
+.l-footer .l-footer__button:hover {
+  background-color: #e8bc27;
+  color: #000;
+}
 .l-footer .l-footer__list {
   font-size: 1.4rem;
 }
