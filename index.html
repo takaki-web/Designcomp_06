@@ -43,10 +43,8 @@
     <link rel="stylesheet" href="/css/destyle.css" />
     <!-- commoncss読み込み-->
     <link rel="stylesheet" href="/css/common.css" />
-    <!-- slick-css読み込み-->
-    <link rel="stylesheet" href="/css/slick.css" />
-    <!-- slick-css-theme読み込み-->
-    <link rel="stylesheet" href="/css/slick-theme.css" />
+    <!-- splidecss読み込み-->
+    <link rel="stylesheet" href="/css/splide.min.css" />
     <!--サイト読み込み高速化-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,46 +54,110 @@
   </head>
 
   <body>
-    <section class="p-index-fv" id="fv">
-      <picture class="p-index-fv__bg-wrapper">
-        <source
-          media="(min-width:1200px)"
-          srcset="img/pc/grid-pc.webp 1x, img/pc/grid-pc@2x.webp 2x"
-        />
-        <img loading='lazy' src=img/sp/grid-sp.webp srcset=' img/sp/grid-sp.webp
-        1x, img/sp/grid-sp@2x.webp 2x ' alt='grid' />
+    <section class="p-index-fv">
+      <picture class='p-index-fv__bg-wrapper'>
+      <source
+      type='image/webp'
+      media='(min-width:1200px)'
+      srcset='img/pc/grid-pc.webp 1x,img/pc/grid-pc@2x.webp 2x'
+      width='1366' height='1600'
+      />
+      <source
+      type='image/webp'
+      srcset='img/sp/grid-sp.webp 1x,img/sp/grid-sp@2x.webp 2x'
+      width='375' height='920'
+      />
+      <img
+      src=img/sp/grid-sp.webp
+      alt='grid'
+      width='375' height='920'
+      />
       </picture>
       <!-- /p-index-fv__bg-wrapper -->
-      <div class="p-index-fv__slider-wrapper" id="js-p-index-fv__slider">
-        <picture class="p-index-fv__slider-img-wrapper">
-          <source
-            media="(min-width:1200px)"
-            srcset="img/pc/fv1-pc.webp 1x, img/pc/fv1-pc@2x.webp 2x"
-          />
-          <img loading='lazy' src=img/sp/fv1-sp.webp srcset=' img/sp/fv1-sp.webp
-          1x, img/sp/fv1-sp@2x.webp 2x ' alt='fv1' />
-        </picture>
-        <!-- /p-index-fv__slider-img-wrapper -->
-        <picture class="p-index-fv__slider-img-wrapper">
-          <source
-            media="(min-width:1200px)"
-            srcset="img/pc/fv2-pc.webp 1x, img/pc/fv2-pc@2x.webp 2x"
-          />
-          <img loading='lazy' src=img/sp/fv2-sp.webp srcset=' img/sp/fv2-sp.webp
-          1x, img/sp/fv2-sp@2x.webp 2x ' alt='fv2' />
-        </picture>
-        <!-- /p-index-fv__slider-img-wrapper -->
-        <picture class="p-index-fv__slider-img-wrapper">
-          <source
-            media="(min-width:1200px)"
-            srcset="img/pc/fv3-pc.webp 1x, img/pc/fv3-pc@2x.webp 2x"
-          />
-          <img loading='lazy' src=img/sp/fv3-sp.webp srcset=' img/sp/fv3-sp.webp
-          1x, img/sp/fv3-sp@2x.webp 2x ' alt='fv3' />
-        </picture>
-        <!-- /p-index-fv__slider-img-wrapper -->
+      <div class="splide" id="slider1">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <picture class="p-index-fv__slider-img-wrapper">
+                <source
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                  srcset="
+                    img/pc/fv1-pc.webp    1x,
+                    img/pc/fv1-pc@2x.webp 2x
+                  "
+                  width="1366"
+                  height="650"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/sp/fv1-sp.webp    1x,
+                    img/sp/fv1-sp@2x.webp 2x
+                  "
+                  width="375"
+                  height="250"
+                />
+                <img src=img/sp/fv1-sp.webp alt='fv1'
+                width='375' height='250' />
+              </picture>
+              <!-- /p-index-fv__slider-img-wrapper -->
+            </li>
+            <li class="splide__slide">
+              <picture class="p-index-fv__slider-img-wrapper">
+                <source
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                  srcset="
+                    img/pc/fv2-pc.webp    1x,
+                    img/pc/fv2-pc@2x.webp 2x
+                  "
+                  width="1366"
+                  height="650"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/sp/fv2-sp.webp    1x,
+                    img/sp/fv2-sp@2x.webp 2x
+                  "
+                  width="375"
+                  height="250"
+                />
+                <img src=img/sp/fv2-sp.webp alt='fv2'
+                width='375' height='250' />
+              </picture>
+              <!-- /p-index-fv__slider-img-wrapper -->
+            </li>
+            <li class="splide__slide">
+              <picture class="p-index-fv__slider-img-wrapper">
+                <source
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                  srcset="
+                    img/pc/fv3-pc.webp    1x,
+                    img/pc/fv3-pc@2x.webp 2x
+                  "
+                  width="1366"
+                  height="650"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/sp/fv3-sp.webp    1x,
+                    img/sp/fv3-sp@2x.webp 2x
+                  "
+                  width="375"
+                  height="250"
+                />
+                <img src=img/sp/fv3-sp.webp alt='fv3'
+                width='375' height='250' />
+              </picture>
+              <!-- /p-index-fv__slider-img-wrapper -->
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-- /.p-index-fv__slider-wrapper -->
       <hgroup class="p-index-fv__title-wrapper">
         <h1 class="p-index-fv__title">
           <svg
@@ -503,17 +565,23 @@
         </p>
       </hgroup>
       <!-- /.p-index-fv__title-wrapper -->
-      <picture class="p-index-fv__img-wrapper">
-        <source
-          media="(min-width:1200px)"
-          srcset="
-            img/pc/icon-flower-pc.webp    1x,
-            img/pc/icon-flower-pc@2x.webp 2x
-          "
-        />
-        <img loading='lazy' src=img/sp/icon-flower-sp.webp srcset='
-        img/sp/icon-flower-sp.webp 1x, img/sp/icon-flower-sp@2x.webp 2x '
-        alt='icon-flower' />
+      <picture class='p-index-fv__img-wrapper'>
+      <source
+      type='image/webp'
+      media='(min-width:1200px)'
+      srcset='img/pc/icon-flower-pc.webp 1x,img/pc/icon-flower-pc@2x.webp 2x'
+      width='800' height='450'
+      />
+      <source
+      type='image/webp'
+      srcset='img/sp/icon-flower-sp.webp 1x,img/sp/icon-flower-sp@2x.webp 2x'
+      width='375' height='440'
+      />
+      <img
+      src=img/sp/icon-flower-sp.webp
+      alt='icon-flower'
+      width='375' height='440'
+      />
       </picture>
       <!-- /p-index-fv__img-wrapper -->
     </section>
@@ -531,14 +599,23 @@
       <!-- /.p-index-product__text -->
       <ul class="p-index-product__lists">
         <li class="p-index-product__list">
-          <picture class="p-index-product__img-wrapper">
-            <source
-              media="(min-width:1200px)"
-              srcset="img/pc/product1-pc.webp 1x, img/pc/product1-pc@2x.webp 2x"
-            />
-            <img loading='lazy' src=img/sp/product1-sp.webp srcset='
-            img/sp/product1-sp.webp 1x, img/sp/product1-sp@2x.webp 2x '
-            alt='product1' />
+          <picture class='p-index-product__img-wrapper'>
+          <source
+          type='image/webp'
+          media='(min-width:1200px)'
+          srcset='img/pc/product1-pc.webp 1x,img/pc/product1-pc@2x.webp 2x'
+          width='360' height='240'
+          />
+          <source
+          type='image/webp'
+          srcset='img/sp/product1-sp.webp 1x,img/sp/product1-sp@2x.webp 2x'
+          width='335' height='223'
+          />
+          <img
+          src=img/sp/product1-sp.webp
+          alt='product1'
+          width='335' height='223'
+          />
           </picture>
           <!-- /p-index-product__img-wrapper -->
         </li>
@@ -558,16 +635,26 @@
         </li>
         <!-- /.p-index-product__list -->
         <li class="p-index-product__list">
-          <picture class="p-index-product__img-wrapper">
+          <picture class='p-index-product__img-wrapper'>
             <source
-              media="(min-width:1200px)"
-              srcset="img/pc/product2-pc.webp 1x, img/pc/product2-pc@2x.webp 2x"
+            type='image/webp'
+            media='(min-width:1200px)'
+            srcset='img/pc/product2-pc.webp 1x,img/pc/product2-pc@2x.webp 2x'
+            width='360' height='240'
             />
-            <img loading='lazy' src=img/sp/product2-sp.webp srcset='
-            img/sp/product2-sp.webp 1x, img/sp/product2-sp@2x.webp 2x '
-            alt='product2' />
-          </picture>
-        </li>
+            <source
+            type='image/webp'
+            srcset='img/sp/product2-sp.webp 1x,img/sp/product2-sp@2x.webp 2x'
+            width='335' height='223'
+            />
+            <img
+            src=img/sp/product2-sp.webp
+            alt='product2'
+            width='335' height='223'
+            />
+            </picture>
+            <!-- /p-index-product__img-wrapper -->
+          </li>
         <!-- /.p-index-product__list -->
         <li class="p-index-product__list">
           <h3 class="p-index-product__list-title">商品名タイトル</h3>
@@ -600,84 +687,113 @@
       </h2>
       <!-- /.p-index-various__title -->
       <div class="p-index-various__grid-wrapper">
-        <div class="p-index-various__lists" id="js-p-index-various__slider">
-          <div class="p-index-various__list">
-            <picture class="p-index-various__img-wrapper">
-              <img loading='lazy' src=img/component/eat-1.webp srcset='
-              img/component/eat-1.webp 1x, img/component/eat-1@2x.webp 2x '
-              alt='eat-1' />
-            </picture>
-            <!-- /p-index-various__img-wrapper -->
-            <h3 class="p-index-various__list-title">そのまま食べる</h3>
-            <!-- /.p-index-various__list-title -->
-            <p class="p-index-various__list-text">
-              商品注意事項テキスト。商品注意事項テキ
-              スト商品注意事項テキスト商品注意事項テ
-              キスト。商品注意事項テキスト商品注意事
-              項テキスト商品注意事項テキスト。
-            </p>
-            <!-- /.p-index-various__list-text -->
+        <div class="splide" id="slider2">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <picture class="p-index-various__img-wrapper">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/component/eat-1.webp    1x,
+                      img/component/eat-1@2x.webp 2x
+                    "
+                    width="250"
+                    height="250"
+                  />
+                  <img src=img/component/eat-1.webp alt='eat-1'
+                  width='250' height='250' />
+                </picture>
+                <!-- /p-index-various__img-wrapper -->
+                <h3 class="p-index-various__list-title">そのまま食べる</h3>
+                <!-- /.p-index-various__list-title -->
+                <p class="p-index-various__list-text">
+                  商品注意事項テキスト。商品注意事項テキ
+                  スト商品注意事項テキスト商品注意事項テ
+                  キスト。商品注意事項テキスト商品注意事
+                  項テキスト商品注意事項テキスト。
+                </p>
+                <!-- /.p-index-various__list-text -->
+              </li>
+              <li class="splide__slide">
+                <picture class="p-index-various__img-wrapper">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/component/eat-2.webp    1x,
+                      img/component/eat-2@2x.webp 2x
+                    "
+                    width="250"
+                    height="250"
+                  />
+                  <img src=img/component/eat-2.webp alt='eat-2'
+                  width='250' height='250' />
+                </picture>
+                <!-- /p-index-various__img-wrapper -->
+                <h3 class="p-index-various__list-title">パンケーキやアイスと一緒に</h3>
+                <!-- /.p-index-various__list-title -->
+                <p class="p-index-various__list-text">
+                  商品注意事項テキスト。商品注意事項テキ
+                  スト商品注意事項テキスト商品注意事項テ
+                  キスト。商品注意事項テキスト商品注意事
+                  項テキスト商品注意事項テキスト。
+                </p>
+                <!-- /.p-index-various__list-text -->
+              </li>
+              <li class="splide__slide">
+                <picture class="p-index-various__img-wrapper">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/component/eat-3.webp    1x,
+                      img/component/eat-3@2x.webp 2x
+                    "
+                    width="250"
+                    height="250"
+                  />
+                  <img src=img/component/eat-3.webp alt='eat-3'
+                  width='250' height='250' />
+                </picture>
+                <!-- /p-index-various__img-wrapper -->
+                <h3 class="p-index-various__list-title">フルーツにかけてもOK</h3>
+                <!-- /.p-index-various__list-title -->
+                <p class="p-index-various__list-text">
+                  商品注意事項テキスト。商品注意事項テキ
+                  スト商品注意事項テキスト商品注意事項テ
+                  キスト。商品注意事項テキスト商品注意事
+                  項テキスト商品注意事項テキスト。
+                </p>
+                <!-- /.p-index-various__list-text -->
+              </li>
+              <li class="splide__slide">
+                <picture class="p-index-various__img-wrapper">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/component/eat-4.webp    1x,
+                      img/component/eat-4@2x.webp 2x
+                    "
+                    width="250"
+                    height="250"
+                  />
+                  <img src=img/component/eat-4.webp alt='eat-4'
+                  width='250' height='250' />
+                </picture>
+                <!-- /p-index-various__img-wrapper -->
+                <h3 class="p-index-various__list-title">ドリンクにいれて飲む</h3>
+                <!-- /.p-index-various__list-title -->
+                <p class="p-index-various__list-text">
+                  商品注意事項テキスト。商品注意事項テキ
+                  スト商品注意事項テキスト商品注意事項テ
+                  キスト。商品注意事項テキスト商品注意事
+                  項テキスト商品注意事項テキスト。
+                </p>
+                <!-- /.p-index-various__list-text -->
+              </li>
+            </ul>
           </div>
-          <!-- /.p-index-various__list -->
-          <div class="p-index-various__list">
-            <picture class="p-index-various__img-wrapper">
-              <img loading='lazy' src=img/component/eat-2.webp srcset='
-              img/component/eat-2.webp 1x, img/component/eat-2@2x.webp 2x '
-              alt='eat-2' />
-            </picture>
-            <!-- /p-index-various__img-wrapper -->
-            <h3 class="p-index-various__list-title">
-              パンケーキやアイスと一緒に
-            </h3>
-            <!-- /.p-index-various__list-title -->
-            <p class="p-index-various__list-text">
-              商品注意事項テキスト。商品注意事項テキ
-              スト商品注意事項テキスト商品注意事項テ
-              キスト。商品注意事項テキスト商品注意事
-              項テキスト商品注意事項テキスト。
-            </p>
-            <!-- /.p-index-various__list-text -->
-          </div>
-          <!-- /.p-index-various__list -->
-          <div class="p-index-various__list">
-            <picture class="p-index-various__img-wrapper">
-              <img loading='lazy' src=img/component/eat-3.webp srcset='
-              img/component/eat-3.webp 1x, img/component/eat-3@2x.webp 2x '
-              alt='eat-3' />
-            </picture>
-            <!-- /p-index-various__img-wrapper -->
-            <h3 class="p-index-various__list-title">フルーツにかけてもOK</h3>
-            <!-- /.p-index-various__list-title -->
-            <p class="p-index-various__list-text">
-              商品注意事項テキスト。商品注意事項テキ
-              スト商品注意事項テキスト商品注意事項テ
-              キスト。商品注意事項テキスト商品注意事
-              項テキスト商品注意事項テキスト。
-            </p>
-            <!-- /.p-index-various__list-text -->
-          </div>
-          <!-- /.p-index-various__list -->
-          <div class="p-index-various__list">
-            <picture class="p-index-various__img-wrapper">
-              <img loading='lazy' src=img/component/eat-4.webp srcset='
-              img/component/eat-4.webp 1x, img/component/eat-4@2x.webp 2x '
-              alt='eat-4' />
-            </picture>
-            <!-- /p-index-various__img-wrapper -->
-            <h3 class="p-index-various__list-title">ドリンクにいれて飲む</h3>
-            <!-- /.p-index-various__list-title -->
-            <p class="p-index-various__list-text">
-              商品注意事項テキスト。商品注意事項テキ
-              スト商品注意事項テキスト商品注意事項テ
-              キスト。商品注意事項テキスト商品注意事
-              項テキスト商品注意事項テキスト。
-            </p>
-            <!-- /.p-index-various__list-text -->
-          </div>
-          <!-- /.p-index-various__list -->
         </div>
-        <!-- /.p-index-various__lists -->
-      </div>
+        </div>
       <!-- /.p-index-various__grid-wrapper -->
     </section>
     <!-- /.p-index-various -->
@@ -714,14 +830,23 @@
           />
         </svg>
 
-        <picture class="p-index-feature__img-wrapper">
-          <source
-            media="(min-width:1200px)"
-            srcset="img/pc/bg-img-pc.webp 1x, img/pc/bg-img-pc@2x.webp 2x"
-          />
-          <img loading='lazy' src=img/sp/bg-img-sp.webp srcset='
-          img/sp/bg-img-sp.webp 1x, img/sp/bg-img-sp@2x.webp 2x ' alt='bg-img'
-          />
+        <picture class='p-index-feature__img-wrapper'>
+        <source
+        type='image/webp'
+        media='(min-width:1200px)'
+        srcset='img/pc/bg-img-pc.webp 1x,img/pc/bg-img-pc@2x.webp 2x'
+        width='1366' height='800'
+        />
+        <source
+        type='image/webp'
+        srcset='img/sp/bg-img-sp.webp 1x,img/sp/bg-img-sp@2x.webp 2x'
+        width='375' height='536'
+        />
+        <img
+        src=img/sp/bg-img-sp.webp
+        alt='bg-img'
+        width='375' height='536'
+        />
         </picture>
         <!-- /p-index-feature__img-wrapper -->
         <svg
@@ -771,14 +896,23 @@
       <div class="p-index-process__grid-wrapper">
         <ul class="p-index-process__lists">
           <li class="p-index-process__list">
-            <picture class="p-index-process__img-wrapper">
-              <source
-                media="(min-width:1200px)"
-                srcset="img/pc/flow-1-pc.webp 1x, img/pc/flow-1-pc@2x.webp 2x"
-              />
-              <img loading='lazy' src=img/sp/flow-1-sp.webp srcset='
-              img/sp/flow-1-sp.webp 1x, img/sp/flow-1-sp@2x.webp 2x '
-              alt='flow-1' />
+            <picture class='p-index-process__img-wrapper'>
+            <source
+            type='image/webp'
+            media='(min-width:1200px)'
+            srcset='img/pc/flow-1-pc.webp 1x,img/pc/flow-1-pc@2x.webp 2x'
+            width='500' height='280'
+            />
+            <source
+            type='image/webp'
+            srcset='img/sp/flow-1-sp.webp 1x,img/sp/flow-1-sp@2x.webp 2x'
+            width='355' height='199'
+            />
+            <img
+            src=img/sp/flow-1-sp.webp
+            alt='flow-1'
+            width='355' height='199'
+            />
             </picture>
             <!-- /p-index-process__img-wrapper -->
           </li>
@@ -798,17 +932,26 @@
           </li>
           <!-- /.p-index-process__list -->
           <li class="p-index-process__list">
-            <picture class="p-index-process__img-wrapper">
+            <picture class='p-index-process__img-wrapper'>
               <source
-                media="(min-width:1200px)"
-                srcset="img/pc/flow-2-pc.webp 1x, img/pc/flow-2-pc@2x.webp 2x"
+              type='image/webp'
+              media='(min-width:1200px)'
+              srcset='img/pc/flow-2-pc.webp 1x,img/pc/flow-2-pc@2x.webp 2x'
+              width='500' height='280'
               />
-              <img loading='lazy' src=img/sp/flow-2-sp.webp srcset='
-              img/sp/flow-2-sp.webp 1x, img/sp/flow-2-sp@2x.webp 2x '
-              alt='flow-2' />
-            </picture>
-            <!-- /p-index-process__img-wrapper -->
-          </li>
+              <source
+              type='image/webp'
+              srcset='img/sp/flow-2-sp.webp 1x,img/sp/flow-2-sp@2x.webp 2x'
+              width='355' height='199'
+              />
+              <img
+              src=img/sp/flow-2-sp.webp
+              alt='flow-2'
+              width='355' height='199'
+              />
+              </picture>
+              <!-- /p-index-process__img-wrapper -->
+            </li>
           <!-- /.p-index-process__list -->
           <li class="p-index-process__list">
             <h3 class="p-index-process__list-title">
@@ -825,17 +968,26 @@
           </li>
           <!-- /.p-index-process__list -->
           <li class="p-index-process__list">
-            <picture class="p-index-process__img-wrapper">
+            <picture class='p-index-process__img-wrapper'>
               <source
-                media="(min-width:1200px)"
-                srcset="img/pc/flow-3-pc.webp 1x, img/pc/flow-3-pc@2x.webp 2x"
+              type='image/webp'
+              media='(min-width:1200px)'
+              srcset='img/pc/flow-3-pc.webp 1x,img/pc/flow-3-pc@2x.webp 2x'
+              width='500' height='280'
               />
-              <img loading='lazy' src=img/sp/flow-3-sp.webp srcset='
-              img/sp/flow-3-sp.webp 1x, img/sp/flow-3-sp@2x.webp 2x '
-              alt='flow-3' />
-            </picture>
-            <!-- /p-index-process__img-wrapper -->
-          </li>
+              <source
+              type='image/webp'
+              srcset='img/sp/flow-3-sp.webp 1x,img/sp/flow-3-sp@2x.webp 2x'
+              width='355' height='199'
+              />
+              <img
+              src=img/sp/flow-3-sp.webp
+              alt='flow-3'
+              width='355' height='199'
+              />
+              </picture>
+              <!-- /p-index-process__img-wrapper -->
+            </li>
           <!-- /.p-index-process__list -->
           <li class="p-index-process__list">
             <h3 class="p-index-process__list-title">
@@ -852,17 +1004,26 @@
           </li>
           <!-- /.p-index-process__list -->
           <li class="p-index-process__list">
-            <picture class="p-index-process__img-wrapper">
+            <picture class='p-index-process__img-wrapper'>
               <source
-                media="(min-width:1200px)"
-                srcset="img/pc/flow-4-pc.webp 1x, img/pc/flow-4-pc@2x.webp 2x"
+              type='image/webp'
+              media='(min-width:1200px)'
+              srcset='img/pc/flow-4-pc.webp 1x,img/pc/flow-4-pc@2x.webp 2x'
+              width='500' height='280'
               />
-              <img loading='lazy' src=img/sp/flow-4-sp.webp srcset='
-              img/sp/flow-4-sp.webp 1x, img/sp/flow-4-sp@2x.webp 2x '
-              alt='flow-4' />
-            </picture>
-            <!-- /p-index-process__img-wrapper -->
-          </li>
+              <source
+              type='image/webp'
+              srcset='img/sp/flow-4-sp.webp 1x,img/sp/flow-4-sp@2x.webp 2x'
+              width='355' height='199'
+              />
+              <img
+              src=img/sp/flow-4-sp.webp
+              alt='flow-4'
+              width='355' height='199'
+              />
+              </picture>
+              <!-- /p-index-process__img-wrapper -->
+            </li>
           <!-- /.p-index-process__list -->
           <li class="p-index-process__list">
             <h3 class="p-index-process__list-title">
@@ -918,19 +1079,26 @@
     <!-- /.p-index-contact -->
 
     <footer class="l-footer">
-      <picture class="l-footer__img-wrapper">
+      <picture class='l-footer__img-wrapper'>
         <source
-          media="(min-width:1200px)"
-          srcset="
-            img/pc/footer-leaf-pc.webp    1x,
-            img/pc/footer-leaf-pc@2x.webp 2x
-          "
+        type='image/webp'
+        media='(min-width:1200px)'
+        srcset='img/pc/footer-leaf-pc.webp 1x,img/pc/footer-leaf-pc@2x.webp 2x'
+        width='1366' height='117'
         />
-        <img loading='lazy' src=img/sp/footer-leaf-sp.webp srcset='
-        img/sp/footer-leaf-sp.webp 1x, img/sp/footer-leaf-sp@2x.webp 2x '
-        alt='footer-leaf' />
-      </picture>
-      <!-- /l-footer__img-wrapper -->
+        <source
+        type='image/webp'
+        srcset='img/sp/footer-leaf-sp.webp 1x,img/sp/footer-leaf-sp@2x.webp 2x'
+        width='375' height='46'
+        />
+        <img
+        src=img/sp/footer-leaf-sp.webp
+        alt='footer-leaf'
+        width='375' height='46'
+        />
+        </picture>
+        <!-- /l-footer__img-wrapper -->
+
       <div class="l-footer__grid-wrapper">
         <div class="l-footer__grid-item">
           <button class="l-footer__button" onclick="location.href='#!'">
@@ -959,8 +1127,7 @@
       </div>
       <!-- /.l-footer__copyright -->
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/slick.min.js"></script>
+    <script src="/js/splide.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

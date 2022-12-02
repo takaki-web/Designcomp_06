@@ -1,42 +1,42 @@
-$(function () {
-  $("#js-p-index-fv__slider").slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    fade: true,
-    slidesToShow: 1,
-    speed: 4000,
-  });
-});
-
-
-
-//【1199px以下】という条件を格納
-const media_width = window.matchMedia("(max-width: 1199px)");
-
-//処理の内容
-function checkBreakPoint() {
-    if (media_width.matches) { //1199px以下なら
-      $(function () {
-        $("#js-p-index-various__slider").slick({
-          arrows: false,
-          autoplay: false,
-          autoplaySpeed: 2000,
-          slidesToShow: 1,
-          speed: 4000,
-          centerMode: true,
-          centerPadding: "50px",
-          dots: true,
-        });
-      });
-    } else { //1200px以上なら
-      $('#js-p-index-various__slider.slick-initialized').slick('unslick');
-    }
+const target = '#slider1';
+const options = {
+	type : 'fade',
+  autoplay: true,
+  pagination : false,
+  arrows     : false,
+  rewind: true,
+	speed: 600,
+	perPage: 1,
+	perMove: 1,
+	trimSpace: false,
+	updateOnMove: false,
+}
+const options2 = {
+  mediaQuery: 'min',
+	type : 'loop',
+  arrows     : false,
+	speed: 600,
+	padding: '17%',
+	perPage: 1,
+	perMove: 1,
+	wheel: true,
+	releaseWheel: true,
+	trimSpace: false,
+	focus: 'center',
+	updateOnMove: false,
+  gap:32,
+  breakpoints: {
+    1200: {
+      destroy: true,
+    },
   }
+}
 
- // ブレイクポイントの瞬間に発火
- //media_width.addListener(checkBreakPoint); ← 非推奨。でもIE11とsafariでも機能する
- media_width.addEventListener("change", checkBreakPoint); //こっちが推奨だけど、safariとIE11で機能しない
+const mySplide = new Splide(target, options);
 
- // 初回チェックで発火
- checkBreakPoint();
+mySplide.mount();
+
+const target2 = '#slider2';
+const mySplide2 = new Splide(target2, options2);
+
+mySplide2.mount();
